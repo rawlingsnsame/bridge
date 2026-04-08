@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Essential Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'">
+
+    <title>Premium Academic & Professional Services | Bambili</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for that clean, tech/boutique feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            surface: '#171717',
+                            border: '#262626',
+                            accent: '#10b981', // Emerald green for WhatsApp synergy & success
+                            accentHover: '#059669'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        
+        /* Subtle Entrance Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glassmorphism for floating elements */
+        .glass {
+            background: rgba(23, 23, 23, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-brand-accent rounded flex items-center justify-center">
+                        <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="font-semibold text-lg tracking-tight">Bridge</span> <!-- Replace with actual name -->
+                </div>
+                <div>
+                    <button onclick="routeToWhatsApp('general')" class="hidden sm:flex items-center gap-2 text-sm font-medium text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-colors">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Let's Talk
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-32 pb-16 sm:pt-40 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+        <div class="max-w-3xl fade-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-xs font-medium text-brand-accent mb-6">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
+                </span>
+                Based in Bambili. Serving Clients Globally.
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+                Precision execution for your <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">most critical</span> documents.
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-neutral-400 mb-10 max-w-2xl leading-relaxed">
+                No templates. No generic AI output. We engineer high-stakes academic papers, technical data, and professional branding to exact standards.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button onclick="routeToWhatsApp('general')" class="flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-lg font-medium transition-all active:scale-95">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                    Start a Project
+                </button>
+                <a href="#expertise" class="flex items-center justify-center gap-2 bg-brand-surface hover:bg-neutral-800 border border-brand-border text-white px-8 py-4 rounded-lg font-medium transition-all">
+                    View Expertise
+                </a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="h-px w-full bg-gradient-to-r from-brand-border to-transparent my-24 fade-up"></div>
+
+        <!-- Services Section -->
+        <div id="expertise" class="scroll-mt-32">
+            <h2 class="text-2xl font-semibold mb-12 fade-up">Areas of Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Service 1: Academic -->
+                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full">
+                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="text-brand-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Academic Formatting</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Rigorous structuring for theses, dissertations, and technical reports. We ensure flawless adherence to APA, MLA, Harvard, or your specific institutional guidelines.
+                    </p>
+                    <button onclick="routeToWhatsApp('academic')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
+                        Discuss Your Paper <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2: Branding -->
+                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="briefcase" class="text-brand-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Professional Branding</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Premium CVs, resumes, and cover letters engineered to bypass ATS systems and position you as top-tier talent in competitive job markets.
+                    </p>
+                    <button onclick="routeToWhatsApp('branding')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
+                        Upgrade Your CV <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3: Data -->
+                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-2" class="text-brand-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Data Analysis</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Raw data translated into clear, actionable insights. Specializing in technical processing, statistical analysis, and clean, readable visual representations.
+                    </p>
+                    <button onclick="routeToWhatsApp('data')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
+                        Analyze My Data <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- The "Why Us" Micro-section -->
+        <div class="mt-24 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center fade-up">
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Why bypass the generic platforms?</h2>
+                <p class="text-neutral-400 leading-relaxed mb-6">
+                    We don't do factory-line output. Every document is treated as a high-stakes project. Operating out of Bambili gives us the academic proximity to understand rigorous standards, while our digital workflow ensures fast, remote delivery anywhere.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-neutral-300">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Strict Confidentiality
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-neutral-300">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Deadlines Respected
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-neutral-300">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Direct 1-on-1 Communication
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl flex flex-col items-center text-center">
+                <i data-lucide="zap" class="w-8 h-8 text-brand-accent mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Ready to move fast?</h3>
+                <p class="text-sm text-neutral-400 mb-6">Skip the emails. Message directly on WhatsApp to discuss scope, pricing, and timelines instantly.</p>
+                <button onclick="routeToWhatsApp('general')" class="w-full sm:w-auto bg-white text-black hover:bg-neutral-200 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Connect Now
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-brand-border mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-neutral-500">
+                &copy; <span id="year"></span> Boutique Services. Bambili, CM.
+            </p>
+            <div class="flex gap-4">
+                <!-- Add social links if needed -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA (Visible only on small screens for constant conversion opportunity) -->
+    <div class="sm:hidden fixed bottom-0 left-0 w-full p-4 glass z-50 fade-up" style="animation-delay: 500ms;">
+        <button onclick="routeToWhatsApp('general')" class="w-full flex items-center justify-center gap-2 bg-brand-accent text-white px-6 py-3.5 rounded-xl font-semibold shadow-lg shadow-brand-accent/20 active:scale-95 transition-transform">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            Chat on WhatsApp
+        </button>
+    </div>
+
+    <!-- Logic -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const BUSINESS_PHONE_NUMBER = "237670290560"; 
+
+        function routeToWhatsApp(intent) {
+            const messages = {
+                'general': "Hello! I visited your website and I'm interested in your professional services. Can we discuss a project?",
+                'academic': "Hello! I need elite assistance with academic writing and formatting. Are you available to discuss my requirements?",
+                'branding': "Hi! I'm looking to upgrade my CV/Cover Letter. How does your professional branding process work?",
+                'data': "Hi! I require expert data analysis and visualization services. Can we talk about my dataset?"
+            };
+
+            // Fallback to general if intent not found
+            const rawMessage = messages[intent] || messages['general'];
+            const encodedMessage = encodeURIComponent(rawMessage);
+            
+            const whatsappUrl = `https://wa.me/${BUSINESS_PHONE_NUMBER}?text=${encodedMessage}`;
+            
+            // Open in new tab/window securely to prevent reverse tabnabbing
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        }
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Optional: Stop observing once animated
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.fade-up');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
