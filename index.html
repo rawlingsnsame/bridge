@@ -1,277 +1,459 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Essential Security Meta Tags -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'">
+<title>Project writing, web design, SEO and data analysis in Bambili, Bamenda | Bridge</title>
+<meta name="description" content="Bridge in Bambili, Bamenda: project writing, slides preparation, data analysis, CV writing, graphic design, website building, SEO and online shop setup and management. Web design and SEO for clients worldwide.">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="CM-NW">
+<meta name="geo.placename" content="Bambili, Bamenda">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bridge: project writing, websites, SEO and data analysis in Bambili">
+<meta property="og:description" content="Academic work, graphic design, web design, SEO, data analysis, CVs and online shops. Clients worldwide.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta property="og:locale" content="en_CM">
+<meta name="theme-color" content="#0e4b55">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e4b55'/%3E%3Cpath d='M3 22h26M3 22q6.5-14 13 0 6.500-14 13 0' fill='none' stroke='%23f0b429' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Bridge","description":"Project writing, slides preparation, data analysis, CV writing, graphic design, web design, SEO and online shop management in Bambili, Bamenda.","url":"https://YOUR-DOMAIN.com/","telephone":"+237670290560","email":"hello@YOUR-DOMAIN.com","address":{"@type":"PostalAddress","addressLocality":"Bambili","addressRegion":"North West","addressCountry":"CM"},"geo":{"@type":"GeoCoordinates","latitude":5.95,"longitude":10.15},"areaServed":["Bambili","Bamenda","Cameroon","Worldwide"],"knowsAbout":["Project writing","Data analysis","CV writing","Graphic design","Web design","Search engine optimization","E-commerce"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Do you build websites and do SEO for clients outside Cameroon?","acceptedAnswer":{"@type":"Answer","text":"Yes. Web design and SEO are done fully online, so we work with personal and business clients anywhere in the world."}},
+{"@type":"Question","name":"Can you write my project or prepare my defence slides?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle project writing, formatting, referencing and slides preparation, following your institution's guidelines."}},
+{"@type":"Question","name":"Can you run my online shop for me?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build the shop and manage products, prices, stock and orders."}},
+{"@type":"Question","name":"How do I pay and how long does a job take?","acceptedAnswer":{"@type":"Answer","text":"Price and deadline are agreed on WhatsApp before work starts. Mobile Money is accepted."}}]}
+</script>
+<style>
+:root{--mist:#f1f4f2;--ink:#11201e;--river:#0e4b55;--river2:#0a3840;--sun:#f0b429;--line:#cbd5d1;--soft:#52645f;--white:#fff;--head:'Bricolage Grotesque',system-ui,sans-serif;--body:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--mist);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+button{font:inherit;color:inherit}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font:700 1rem var(--body);padding:.85rem 1.4rem;border-radius:.4rem;text-decoration:none;border:0;cursor:pointer;transition:transform .12s,background .15s,box-shadow .15s;box-shadow:0 3px 0 #b8861a}
+.btn:hover{background:#ffc94d}.btn:active{transform:translateY(3px);box-shadow:none}
+.btn.ghost{background:none;border:2px solid var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:var(--mist)}
+.btn.ghost:active{transform:scale(.97)}
+#pg{position:fixed;top:0;left:0;height:3px;width:0;background:var(--sun);z-index:50}
+header{position:sticky;top:0;z-index:20;background:rgba(241,244,242,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:4rem}
+.logo{display:flex;align-items:center;gap:.6rem;font:800 1.45rem var(--head);text-decoration:none;letter-spacing:-.03em}
+nav{display:flex;align-items:center;gap:1.5rem;font-size:.95rem}
+nav a:not(.btn){text-decoration:none;color:var(--soft);padding:.3rem 0;border-bottom:3px solid transparent}
+nav a:not(.btn):hover,nav a[aria-current]{color:var(--ink);border-color:var(--sun)}
+nav .btn{padding:.5rem 1rem;font-size:.9rem}
+@media(max-width:44rem){nav a:not(.btn){display:none}}
 
-    <title>Premium Academic & Professional Services | Bambili</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Inter for that clean, tech/boutique feel -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+.hero{padding:3.5rem 0 3rem}
+.hero .wrap{display:grid;gap:2.5rem}
+@media(min-width:60rem){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;gap:4rem}}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;margin-bottom:1.1rem;animation:rise .7s ease-out both}
+.hero .lead{font-size:1.15rem;color:var(--soft);max-width:33rem;margin-bottom:1.6rem;animation:rise .7s .1s ease-out both}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;animation:rise .7s .2s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;animation:rise .7s .15s ease-out both}
+@media(min-width:36rem){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;background:var(--white);border:1.5px solid var(--line);border-radius:.6rem;padding:1rem;font-weight:700;cursor:pointer;text-align:left;transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:var(--ink);transform:translateY(-3px);box-shadow:0 .6rem 1.2rem rgba(17,32,30,.1)}
+.tile:active{transform:scale(.96)}
+.ico{width:3rem;height:3rem;padding:.55rem;background:var(--sun);border-radius:.5rem;fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0a0a0a',
-                            surface: '#171717',
-                            border: '#262626',
-                            accent: '#10b981', // Emerald green for WhatsApp synergy & success
-                            accentHover: '#059669'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+.trust{border-block:1px solid var(--line);background:var(--white)}
+.trust ul{list-style:none;padding:1rem 0;display:flex;flex-wrap:wrap;gap:.6rem 2rem;font-weight:600;font-size:.95rem}
+.trust li::before{content:'';display:inline-block;width:.6rem;height:.6rem;background:var(--sun);border-radius:50%;margin-right:.6rem}
 
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #f5f5f5;
-        }
-        
-        /* Subtle Entrance Animations */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        
-        .fade-up.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+section{padding:4.5rem 0}
+h2.t{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:1.6rem}
 
-        /* Glassmorphism for floating elements */
-        .glass {
-            background: rgba(23, 23, 23, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-    </style>
+.tabs{display:flex;gap:.5rem;overflow-x:auto;padding:.2rem 0 .8rem;margin-bottom:1rem;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font-weight:700;background:var(--white);border:1.5px solid var(--line);border-radius:2rem;padding:.55rem 1.1rem;cursor:pointer;transition:background .15s,transform .1s}
+.tab:hover{border-color:var(--ink)}.tab:active{transform:scale(.95)}
+.tab[aria-selected=true],.tab[aria-pressed=true]{background:var(--ink);color:var(--mist);border-color:var(--ink)}
+.panel{display:grid;gap:2rem;background:var(--white);border:1.5px solid var(--line);border-radius:.8rem;padding:1.6rem;animation:rise .35s ease-out}
+@media(min-width:52rem){.panel{grid-template-columns:1fr 1fr;align-items:center;padding:2.5rem}}
+.panel h3{font-size:2rem;margin-bottom:.5rem}
+.panel .sum{color:var(--soft);margin-bottom:1.1rem}
+.ticks{list-style:none;padding:0;display:grid;gap:.55rem;margin-bottom:1.5rem;font-weight:600}
+.ticks li::before{content:'';display:inline-block;width:.65rem;height:.65rem;background:var(--sun);border-radius:50%;margin-right:.7rem}
+.viz{background:var(--mist);border-radius:.6rem;display:grid;place-items:center;padding:1rem;min-height:15rem}
+.viz svg.art{width:100%;max-width:20rem;height:auto}
+.bar{transform-origin:bottom;transform-box:fill-box;animation:grow .7s ease-out both}
+.bar:nth-child(2){animation-delay:.1s}.bar:nth-child(3){animation-delay:.2s}.bar:nth-child(4){animation-delay:.3s}.bar:nth-child(5){animation-delay:.4s}
+@keyframes grow{from{transform:scaleY(0)}}
+[hidden]{display:none!important}
+
+.vweb{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;justify-content:center}
+.phone{width:12rem;aspect-ratio:9/18.5;background:var(--ink);border:.45rem solid var(--ink);border-radius:1.6rem;overflow:hidden}
+.scr{height:100%;font:.62rem/1.3 system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden;animation:rise .3s ease-out}
+.scr .bb{display:flex;justify-content:space-between;align-items:center;padding:.95rem .6rem .45rem;font-weight:700}
+.s-personal{background:#e9f0fb;align-items:center;text-align:center;padding:1.3rem .7rem;gap:.4rem;color:#14304f}
+.s-personal .av{width:3.6rem;height:3.6rem;border-radius:50%;background:#1f6fb2;margin-top:.5rem;box-shadow:0 0 0 .25rem #fff}
+.s-personal b{font:800 1rem var(--head)}
+.s-personal i{font-style:normal;width:100%;background:#fff;border-radius:2rem;padding:.4rem;font-weight:600}
+.s-personal i.p{background:#1f6fb2;color:#fff}
+.s-shop{background:#fff}.s-shop .bb{border-bottom:1px solid #eee}
+.cart{background:#2f8f4e;color:#fff;border-radius:50%;width:1.2rem;height:1.2rem;display:grid;place-items:center}
+.s-shop .sb{margin:.5rem .6rem;background:#f1f1f1;border-radius:.3rem;padding:.35rem .5rem;color:#888}
+.s-shop .cats{display:flex;gap:.3rem;padding:0 .6rem}
+.s-shop .cats i{font-style:normal;border:1px solid #ddd;border-radius:1rem;padding:.15rem .5rem}
+.s-shop .cats i:first-child{background:#2f8f4e;color:#fff;border-color:#2f8f4e}
+.s-shop .pg{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.6rem}
+.s-shop .pg div{display:grid;gap:.15rem}
+.s-shop .pg u{height:3.2rem;border-radius:.3rem;background:#cfe8d6}
+.s-shop .pg div:nth-child(2) u{background:#f6d9a8}.s-shop .pg div:nth-child(3) u{background:#d3dcf0}.s-shop .pg div:nth-child(4) u{background:#f0cfd3}
+.s-shop .pg s{text-decoration:none;color:#2f8f4e;font-weight:700}
+.s-shop .pg em{font-style:normal;background:#11201e;color:#fff;text-align:center;border-radius:.25rem;padding:.15rem}
+.s-biz{background:#fff}.s-biz .bb{border-bottom:1px solid #eee}
+.s-biz .hb{background:#0e4b55;color:#fff;padding:1.1rem .6rem}
+.s-biz .hb span{display:block;font:800 1.05rem/1.1 var(--head);margin-bottom:.6rem}
+.s-biz .hb em{display:inline-block;background:#f0b429;color:#11201e;font-style:normal;font-weight:700;padding:.25rem .5rem;border-radius:.25rem}
+.s-biz .r3{display:grid;grid-template-columns:repeat(3,1fr);gap:.3rem;padding:.6rem}
+.s-biz .r3 u{text-decoration:none;text-align:center;border:1px solid #ddd;border-radius:.3rem;padding:.8rem .1rem;font-weight:600}
+.s-biz .ft{margin-top:auto;background:#f1f4f2;padding:.6rem;text-align:center;color:#555}
+.s-port{background:#161616;color:#fff;padding:0 .6rem .6rem}.s-port .bb{padding-left:0}
+.s-port p{font:800 1.1rem var(--head);margin:.3rem 0 .5rem}
+.s-port .mas{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);gap:.4rem;flex:1}
+.s-port .mas u{border-radius:.3rem;background:#f0b429}
+.s-port .mas u:nth-child(1){grid-row:span 2;background:#3a7bd5}.s-port .mas u:nth-child(3){background:#e0e0e0}.s-port .mas u:nth-child(4){background:#0e4b55}
+.s-other{background:#fff;padding:.9rem .7rem;gap:.5rem}
+.s-other u{border:1.5px dashed #aaa;border-radius:.3rem;display:grid;place-items:center;color:#777;text-decoration:none;font-weight:600}
+.s-other .a{height:2rem}.s-other .b{height:5rem}.s-other .c{flex:1}
+.themes{display:flex;flex-wrap:wrap;gap:.5rem;max-width:11rem}
+.themes .btn{font-size:.9rem;padding:.55rem .9rem}
+.themes .tab{padding:.4rem .9rem;font-size:.9rem}
+
+.band{background:var(--ink);color:var(--mist)}
+.demo{display:grid;gap:2rem}
+@media(min-width:56rem){.demo{grid-template-columns:1fr 1fr;align-items:start}}
+.demo label{display:block;font-size:.85rem;font-weight:600;margin:0 0 .3rem}
+.demo input{width:100%;font:inherit;padding:.65rem .75rem;border-radius:.35rem;border:0;margin-bottom:.9rem;background:#1d3330;color:var(--white)}
+.serp{background:var(--white);color:#202124;border-radius:.5rem;padding:1.2rem 1.4rem;font-family:Arial,sans-serif}
+.serp .u{font-size:.8rem;color:#4d5156;word-break:break-all}
+.serp .tt{font-size:1.2rem;color:#1a0dab;margin:.2rem 0;line-height:1.3}
+.serp .d{font-size:.9rem;color:#4d5156;line-height:1.5}
+.note{font-size:.88rem;font-weight:600}
+.note.ok{color:#7fd69a}.note.warn{color:var(--sun)}
+
+.quote{display:grid;gap:2.5rem}
+@media(min-width:60rem){.quote{grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}}
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:1.1rem}
+.steps li{counter-increment:s;display:flex;gap:1rem;align-items:center;font-weight:600;font-size:1.15rem}
+.steps li::before{content:counter(s);flex:none;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--river);color:#fff;display:grid;place-items:center;font:800 1.2rem var(--head)}
+.brief{background:var(--river);color:var(--white);border-radius:.8rem;padding:1.5rem}
+.brief fieldset{border:0;padding:0;margin:0 0 1rem}
+.brief legend,.brief label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.4rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font-size:.9rem;background:none;border:1.5px solid rgba(255,255,255,.4);border-radius:2rem;padding:.4rem .85rem;cursor:pointer;transition:background .15s,transform .1s}
+.chip:hover{border-color:#fff}.chip:active{transform:scale(.94)}
+.chip[aria-pressed=true]{background:var(--sun);border-color:var(--sun);color:var(--ink);font-weight:700}
+.brief select,.brief textarea{width:100%;font:inherit;font-size:.95rem;padding:.6rem .7rem;border-radius:.35rem;border:0;background:#fff;color:var(--ink)}
+.brief textarea{resize:vertical;min-height:4.2rem}
+.cnt{font-size:.75rem;opacity:.7;text-align:right;margin-top:.2rem}
+.bubble{background:var(--river2);border-left:4px solid var(--sun);border-radius:.3rem;padding:.8rem .9rem;font-size:.9rem;line-height:1.5;margin-bottom:1rem}
+.bubble small{display:block;opacity:.65;margin-bottom:.2rem;font-size:.75rem}
+.acts{display:grid;gap:.6rem}
+@media(min-width:30rem){.acts{grid-template-columns:repeat(3,1fr)}}
+.brief .btn{text-align:center}
+.brief .btn.ghost{border-color:#fff;color:#fff}
+.brief .btn.ghost:hover{background:#fff;color:var(--ink)}
+
+.about{display:grid;gap:2rem}
+@media(min-width:56rem){.about{grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start}}
+.about p{color:#a9b8b4;max-width:30rem}
+.cards{display:grid;gap:.8rem}
+.cc{display:block;text-decoration:none;border:1.5px solid #2d4743;border-radius:.6rem;padding:1rem 1.2rem;transition:border-color .15s,transform .12s}
+a.cc:hover{border-color:var(--sun)}a.cc:active{transform:scale(.98)}
+.cc b{display:block;font:700 1.1rem var(--head)}.cc span{color:#a9b8b4;word-break:break-all}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:2px solid var(--ink)}
+summary{cursor:pointer;list-style:none;padding:1.1rem 2.5rem 1.1rem 0;font:700 1.15rem var(--head);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';position:absolute;right:.4rem;top:50%;transform:translateY(-50%);font:500 1.7rem var(--body);transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 2.5rem 1.2rem 0;color:var(--soft);max-width:44rem}
+
+footer{background:var(--river);color:#fff;padding:3rem 0 6rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:center}
+footer .logo{color:#fff}
+footer p{opacity:.8;font-size:.92rem}
+
+#toast{position:fixed;left:50%;bottom:5.5rem;transform:translate(-50%,2rem);background:var(--ink);color:#fff;padding:.7rem 1.2rem;border-radius:2rem;font-weight:600;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:60;border:2px solid var(--sun)}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.sticky{display:none}
+@media(max-width:44rem){.sticky{display:flex;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:.7rem 1rem;background:rgba(241,244,242,.96);border-top:1px solid var(--line)}.sticky .btn{flex:1;text-align:center;padding:.8rem .5rem}}
+@media(min-width:44.01rem){#toast{bottom:2rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
-<body class="antialiased selection:bg-brand-accent selection:text-white flex flex-col min-h-screen">
+<body>
+<div id="pg"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-doc" viewBox="0 0 48 48"><path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8M18 24h14M18 30h14M18 36h8"/></symbol>
+<symbol id="i-design" viewBox="0 0 48 48"><circle cx="18" cy="18" r="9"/><rect x="22" y="22" width="18" height="18" rx="2"/><path d="M8 40l8-13 8 13z"/></symbol>
+<symbol id="i-web" viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="30" rx="3"/><path d="M5 17h38M12 25h14M12 31h9"/></symbol>
+<symbol id="i-data" viewBox="0 0 48 48"><path d="M8 40h32M13 40V26M22 40V14M31 40V22M40 40V8"/></symbol>
+<symbol id="i-cv" viewBox="0 0 48 48"><rect x="8" y="7" width="32" height="34" rx="3"/><circle cx="19" cy="19" r="4"/><path d="M12 31c1-5 13-5 14 0M30 17h6M30 23h6M30 29h6"/></symbol>
+<symbol id="i-shop" viewBox="0 0 48 48"><path d="M8 14h32l-3 22H11z"/><path d="M17 20v-4a7 7 0 0 1 14 0v4"/></symbol>
+</svg>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <div class="w-8 h-8 bg-brand-accent rounded flex items-center justify-center">
-                        <i data-lucide="layers" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <span class="font-semibold text-lg tracking-tight">Bridge</span> <!-- Replace with actual name -->
-                </div>
-                <div>
-                    <button onclick="routeToWhatsApp('general')" class="hidden sm:flex items-center gap-2 text-sm font-medium text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-colors">
-                        <i data-lucide="message-circle" class="w-4 h-4"></i>
-                        Let's Talk
-                    </button>
-                </div>
-            </div>
-        </div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Bridge home">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0e4b55"/><path d="M3 22h26M3 22q6.500-14 13 0 6.500-14 13 0" fill="none" stroke="#f0b429" stroke-width="3"/></svg>Bridge
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a><a href="#search">SEO</a><a href="#start">Quote</a><a href="#faq">FAQ</a><a href="#about">About</a>
+      <a class="btn" href="#start">Get a quote</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <main class="flex-grow pt-32 pb-16 sm:pt-40 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
-        <div class="max-w-3xl fade-up">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-xs font-medium text-brand-accent mb-6">
-                <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
-                </span>
-                Based in Bambili. Serving Clients Globally.
-            </div>
-            
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-                Precision execution for your <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">most critical</span> documents.
-            </h1>
-            
-            <p class="text-lg sm:text-xl text-neutral-400 mb-10 max-w-2xl leading-relaxed">
-                No templates. No generic AI output. We engineer high-stakes academic papers, technical data, and professional branding to exact standards.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4">
-                <button onclick="routeToWhatsApp('general')" class="flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-lg font-medium transition-all active:scale-95">
-                    <i data-lucide="send" class="w-5 h-5"></i>
-                    Start a Project
-                </button>
-                <a href="#expertise" class="flex items-center justify-center gap-2 bg-brand-surface hover:bg-neutral-800 border border-brand-border text-white px-8 py-4 rounded-lg font-medium transition-all">
-                    View Expertise
-                </a>
-            </div>
-        </div>
+<main id="top">
+<section class="hero" style="padding-bottom:3rem">
+  <div class="wrap">
+    <div>
+      <h1>Project writing, data analysis, websites and more.</h1>
+      <p class="lead">We write projects, prepare slides and CVs, analyse data, design graphics, build websites, do SEO, and set up and run online shops.</p>
+      <div class="cta"><a class="btn" href="#start">Get a quote</a><a class="btn ghost" href="#services">View services</a></div>
+    </div>
+    <div class="tiles" id="tiles">
+      <button class="tile" data-go="academic"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>Academic work</button>
+      <button class="tile" data-go="design"><svg class="ico" aria-hidden="true"><use href="#i-design"/></svg>Graphic design</button>
+      <button class="tile" data-go="web"><svg class="ico" aria-hidden="true"><use href="#i-web"/></svg>Web design</button>
+      <button class="tile" data-go="data"><svg class="ico" aria-hidden="true"><use href="#i-data"/></svg>Data analysis</button>
+      <button class="tile" data-go="cv"><svg class="ico" aria-hidden="true"><use href="#i-cv"/></svg>CV writing</button>
+      <button class="tile" data-go="shop"><svg class="ico" aria-hidden="true"><use href="#i-shop"/></svg>Online shop</button>
+    </div>
+  </div>
+</section>
 
-        <!-- Divider -->
-        <div class="h-px w-full bg-gradient-to-r from-brand-border to-transparent my-24 fade-up"></div>
+<div class="trust"><div class="wrap"><ul><li>Replies on WhatsApp</li><li>Price agreed first</li><li>Mobile Money accepted</li><li>Clients worldwide</li><li>Strictly confidential</li></ul></div></div>
 
-        <!-- Services Section -->
-        <div id="expertise" class="scroll-mt-32">
-            <h2 class="text-2xl font-semibold mb-12 fade-up">Areas of Expertise</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Service 1: Academic -->
-                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full">
-                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="book-open" class="text-brand-accent w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Academic Formatting</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
-                        Rigorous structuring for theses, dissertations, and technical reports. We ensure flawless adherence to APA, MLA, Harvard, or your specific institutional guidelines.
-                    </p>
-                    <button onclick="routeToWhatsApp('academic')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
-                        Discuss Your Paper <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
-
-                <!-- Service 2: Branding -->
-                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full" style="transition-delay: 100ms;">
-                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="briefcase" class="text-brand-accent w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Professional Branding</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
-                        Premium CVs, resumes, and cover letters engineered to bypass ATS systems and position you as top-tier talent in competitive job markets.
-                    </p>
-                    <button onclick="routeToWhatsApp('branding')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
-                        Upgrade Your CV <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
-
-                <!-- Service 3: Data -->
-                <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl hover:border-brand-accent/50 transition-colors group fade-up flex flex-col h-full" style="transition-delay: 200ms;">
-                    <div class="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="bar-chart-2" class="text-brand-accent w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Data Analysis</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">
-                        Raw data translated into clear, actionable insights. Specializing in technical processing, statistical analysis, and clean, readable visual representations.
-                    </p>
-                    <button onclick="routeToWhatsApp('data')" class="text-sm font-medium text-white flex items-center gap-2 hover:text-brand-accent transition-colors w-fit">
-                        Analyze My Data <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- The "Why Us" Micro-section -->
-        <div class="mt-24 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center fade-up">
-            <div>
-                <h2 class="text-2xl font-semibold mb-4">Why bypass the generic platforms?</h2>
-                <p class="text-neutral-400 leading-relaxed mb-6">
-                    We don't do factory-line output. Every document is treated as a high-stakes project. Operating out of Bambili gives us the academic proximity to understand rigorous standards, while our digital workflow ensures fast, remote delivery anywhere.
-                </p>
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3 text-sm text-neutral-300">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Strict Confidentiality
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-neutral-300">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Deadlines Respected
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-neutral-300">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent"></i> Direct 1-on-1 Communication
-                    </li>
-                </ul>
-            </div>
-            <div class="bg-brand-surface border border-brand-border p-8 rounded-2xl flex flex-col items-center text-center">
-                <i data-lucide="zap" class="w-8 h-8 text-brand-accent mb-4"></i>
-                <h3 class="text-lg font-medium mb-2">Ready to move fast?</h3>
-                <p class="text-sm text-neutral-400 mb-6">Skip the emails. Message directly on WhatsApp to discuss scope, pricing, and timelines instantly.</p>
-                <button onclick="routeToWhatsApp('general')" class="w-full sm:w-auto bg-white text-black hover:bg-neutral-200 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Connect Now
-                </button>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-brand-border mt-auto">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="text-sm text-neutral-500">
-                &copy; <span id="year"></span> Bridge Services. Bambili, CM.
-            </p>
-            <div class="flex gap-4">
-                <!-- Add social links if needed -->
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Sticky CTA (Visible only on small screens for constant conversion opportunity) -->
-    <div class="sm:hidden fixed bottom-0 left-0 w-full p-4 glass z-50 fade-up" style="animation-delay: 500ms;">
-        <button onclick="routeToWhatsApp('general')" class="w-full flex items-center justify-center gap-2 bg-brand-accent text-white px-6 py-3.5 rounded-xl font-semibold shadow-lg shadow-brand-accent/20 active:scale-95 transition-transform">
-            <i data-lucide="message-square" class="w-5 h-5"></i>
-            Chat on WhatsApp
-        </button>
+<section id="services">
+  <div class="wrap">
+    <h2 class="t">Our services</h2>
+    <div class="tabs" role="tablist" aria-label="Services" id="tabs">
+      <button class="tab" role="tab" data-id="academic">Academic work</button>
+      <button class="tab" role="tab" data-id="design">Graphic design</button>
+      <button class="tab" role="tab" data-id="web">Web design</button>
+      <button class="tab" role="tab" data-id="data">Data analysis</button>
+      <button class="tab" role="tab" data-id="cv">CV writing</button>
+      <button class="tab" role="tab" data-id="shop">Online shop</button>
     </div>
 
-    <!-- Logic -->
-    <script>
-        // Initialize Icons
-        lucide.createIcons();
+    <div class="panel" role="tabpanel" id="p-academic" data-name="Academic work">
+      <div><h3>Academic work</h3><p class="sum">Your project, finished properly.</p>
+        <ul class="ticks"><li>Project and dissertation writing</li><li>Referencing in APA, Harvard or Vancouver</li><li>Slides preparation for your defence</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><svg class="art" viewBox="0 0 300 220" role="img" aria-label="Document and slide"><rect x="30" y="30" width="110" height="150" rx="6" fill="#fff" stroke="#11201e" stroke-width="2"/><path d="M45 55h60M45 75h80M45 90h80M45 105h70M45 120h80M45 135h50" stroke="#cbd5d1" stroke-width="5" stroke-linecap="round"/><rect x="120" y="70" width="150" height="95" rx="6" fill="#0e4b55"/><rect x="135" y="85" width="70" height="9" rx="4" fill="#f0b429"/><path d="M135 108h100M135 122h80M135 136h60" stroke="#fff" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/></svg></div>
+    </div>
 
-        // Set dynamic year
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const BUSINESS_PHONE_NUMBER = "237670290560"; 
+    <div class="panel" role="tabpanel" id="p-design" data-name="Graphic design" hidden>
+      <div><h3>Graphic design</h3><p class="sum">Visuals that make you look established.</p>
+        <ul class="ticks"><li>Logos and brand colours</li><li>Flyers, posters and banners</li><li>Social media graphics</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><svg class="art" viewBox="0 0 300 220" role="img" aria-label="Logo and poster shapes"><circle cx="105" cy="105" r="60" fill="#f0b429"/><rect x="125" y="70" width="110" height="110" rx="8" fill="#0e4b55"/><text x="150" y="140" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="48" fill="#fff">Aa</text><path d="M60 175l35-60 35 60z" fill="#11201e"/></svg></div>
+    </div>
 
-        function routeToWhatsApp(intent) {
-            const messages = {
-                'general': "Hello! I visited your website and I'm interested in your professional services. Can we discuss a project?",
-                'academic': "Hello! I need elite assistance with academic writing and formatting. Are you available to discuss my requirements?",
-                'branding': "Hi! I'm looking to upgrade my CV/Cover Letter. How does your professional branding process work?",
-                'data': "Hi! I require expert data analysis and visualization services. Can we talk about my dataset?"
-            };
+    <div class="panel" role="tabpanel" id="p-web" data-name="Web design" hidden>
+      <div><h3>Web design</h3><p class="sum">A website that works on every phone.</p>
+        <ul class="ticks"><li>Personal sites, portfolios, business pages and shops</li><li>Fast on any phone or connection</li><li>SEO so people anywhere can find you</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><div class="vweb">
+        <div class="phone">
+          <div class="scr s-personal" data-k="Personal"><div class="av"></div><b>Amina Ngu</b><span>Writer and designer</span><i>About me</i><i>My work</i><i>Blog</i><i class="p">Contact me</i></div>
+          <div class="scr s-shop" data-k="Shop" hidden><div class="bb"><b>Mara Store</b><span class="cart">2</span></div><div class="sb">Search products</div><div class="cats"><i>All</i><i>Shoes</i><i>Bags</i></div><div class="pg"><div><u></u><b>Sneakers</b><s>15,000 F</s><em>Add to cart</em></div><div><u></u><b>Handbag</b><s>12,500 F</s><em>Add to cart</em></div><div><u></u><b>Shirt</b><s>6,000 F</s><em>Add to cart</em></div><div><u></u><b>Sandals</b><s>8,000 F</s><em>Add to cart</em></div></div></div>
+          <div class="scr s-biz" data-k="Business" hidden><div class="bb"><b>Northline Co.</b><span>&#9776;</span></div><div class="hb"><span>Services you can trust</span><em>Get a quote</em></div><div class="r3"><u>Consulting</u><u>Training</u><u>Support</u></div><div class="ft">Call &nbsp; Email &nbsp; Visit</div></div>
+          <div class="scr s-port" data-k="Portfolio" hidden><div class="bb"><b>Studio Lumen</b></div><p>Selected work</p><div class="mas"><u></u><u></u><u></u><u></u><u></u></div></div>
+          <div class="scr s-other" data-k="Other" hidden><u class="a">Menu</u><u class="b">Your idea</u><u class="c">Your pages</u></div>
+        </div>
+        <div class="themes" id="themes"><button class="tab" aria-pressed="true">Personal</button><button class="tab" aria-pressed="false">Shop</button><button class="tab" aria-pressed="false">Business</button><button class="tab" aria-pressed="false">Portfolio</button><button class="tab" aria-pressed="false">Other</button><button class="btn" id="other" hidden>Describe your site</button></div>
+      </div></div>
+    </div>
 
-            // Fallback to general if intent not found
-            const rawMessage = messages[intent] || messages['general'];
-            const encodedMessage = encodeURIComponent(rawMessage);
-            
-            const whatsappUrl = `https://wa.me/${BUSINESS_PHONE_NUMBER}?text=${encodedMessage}`;
-            
-            // Open in new tab/window securely to prevent reverse tabnabbing
-            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-        }
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+    <div class="panel" role="tabpanel" id="p-data" data-name="Data analysis" hidden>
+      <div><h3>Data analysis</h3><p class="sum">Your data, turned into clear results.</p>
+        <ul class="ticks"><li>Tables, tests and charts</li><li>Results explained in plain language</li><li>Ready to place in your report</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><svg class="art" viewBox="0 0 300 220" role="img" aria-label="Bar chart"><path d="M30 185h245" stroke="#11201e" stroke-width="3"/><g><rect class="bar" x="45" y="110" width="35" height="75" fill="#0e4b55"/><rect class="bar" x="95" y="70" width="35" height="115" fill="#f0b429"/><rect class="bar" x="145" y="125" width="35" height="60" fill="#0e4b55"/><rect class="bar" x="195" y="40" width="35" height="145" fill="#f0b429"/><rect class="bar" x="245" y="90" width="25" height="95" fill="#0e4b55"/></g></svg></div>
+    </div>
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    // Optional: Stop observing once animated
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+    <div class="panel" role="tabpanel" id="p-cv" data-name="CV" hidden>
+      <div><h3>CV writing</h3><p class="sum">A CV that gets you shortlisted.</p>
+        <ul class="ticks"><li>CV writing and redesign</li><li>Cover letters</li><li>Layouts employers and ATS can read</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><svg class="art" viewBox="0 0 300 220" role="img" aria-label="CV page"><rect x="85" y="15" width="130" height="190" rx="6" fill="#fff" stroke="#11201e" stroke-width="2"/><circle cx="125" cy="55" r="17" fill="#0e4b55"/><path d="M155 48h42M155 63h30M100 100h100M100 118h100M100 136h70M100 160h100M100 178h60" stroke="#cbd5d1" stroke-width="6" stroke-linecap="round"/><circle cx="212" cy="190" r="16" fill="#f0b429"/><path d="M204 190l6 6 11-12" fill="none" stroke="#11201e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const animatedElements = document.querySelectorAll('.fade-up');
-            animatedElements.forEach(el => observer.observe(el));
-        });
-    </script>
+    <div class="panel" role="tabpanel" id="p-shop" data-name="Online shop" hidden>
+      <div><h3>Online shop</h3><p class="sum">We build it, and we help you run it.</p>
+        <ul class="ticks"><li>Shop setup with your products</li><li>Prices, stock and orders managed</li><li>Updates and fixes when needed</li></ul>
+        <button class="btn req">Request this</button></div>
+      <div class="viz"><svg class="art" viewBox="0 0 300 220" role="img" aria-label="Shop products"><rect x="35" y="30" width="105" height="75" rx="6" fill="#0e4b55"/><rect x="160" y="30" width="105" height="75" rx="6" fill="#f0b429"/><rect x="35" y="120" width="105" height="75" rx="6" fill="#f0b429"/><rect x="160" y="120" width="105" height="75" rx="6" fill="#0e4b55"/><path d="M45 112h45M170 112h45M45 202h45M170 202h45" stroke="#11201e" stroke-width="4" stroke-linecap="round"/><circle cx="265" cy="28" r="17" fill="#11201e"/><path d="M257 24h16l-2 11h-12zM261 24v-3a4 4 0 0 1 8 0v3" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section id="search" class="band">
+  <div class="wrap">
+    <h2 class="t">See how Google could show your business</h2>
+    <div class="demo">
+      <div>
+        <label for="bn">Business name</label><input id="bn" value="Mbah Fresh Foods" maxlength="40" autocomplete="off">
+        <label for="bt">What you do</label><input id="bt" value="Fresh groceries and delivery" maxlength="50" autocomplete="off">
+        <label for="bp">City or country</label><input id="bp" value="Lagos" maxlength="30" autocomplete="off">
+        <p class="note" id="count"></p>
+      </div>
+      <div class="serp" aria-live="polite"><div class="u" id="su"></div><div class="tt" id="st"></div><div class="d" id="sd"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap quote">
+    <div>
+      <h2 class="t">Get a quote in three steps</h2>
+      <ol class="steps"><li>Choose a service</li><li>Send us your message on WhatsApp</li><li>Agree the price and deadline</li></ol>
+    </div>
+    <div class="brief">
+      <fieldset><legend>Service</legend>
+        <div class="chips" id="chips">
+          <button type="button" class="chip" aria-pressed="false">Academic work</button>
+          <button type="button" class="chip" aria-pressed="false">Graphic design</button>
+          <button type="button" class="chip" aria-pressed="true">Web design</button>
+          <button type="button" class="chip" aria-pressed="false">SEO</button>
+          <button type="button" class="chip" aria-pressed="false">Data analysis</button>
+          <button type="button" class="chip" aria-pressed="false">CV</button>
+          <button type="button" class="chip" aria-pressed="false">Online shop</button>
+        </div>
+      </fieldset>
+      <div style="margin-bottom:1rem"><label for="when">Deadline</label>
+        <select id="when"><option>as soon as possible</option><option>within a week</option><option>within a month</option><option>not sure yet</option></select></div>
+      <div style="margin-bottom:1rem"><label for="more">Details (optional)</label>
+        <textarea id="more" maxlength="200" placeholder="For example: defence slides for my project on nutrition."></textarea><div class="cnt"><span id="n">0</span>/200</div></div>
+      <p class="bubble"><small>Your message</small><span id="msg"></span></p>
+      <div class="acts"><a class="btn" id="send" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="btn ghost" id="mail" href="#">Email</a><button type="button" class="btn ghost" id="copy">Copy</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap" style="max-width:52rem">
+    <h2 class="t">Questions</h2>
+    <details><summary>Do you build websites and do SEO for clients outside Cameroon?</summary><p>Yes. It is done fully online, so we work with clients anywhere in the world.</p></details>
+    <details><summary>Can you write my project or prepare my defence slides?</summary><p>Yes. We follow your institution's guidelines.</p></details>
+    <details><summary>Can you run my online shop for me?</summary><p>Yes. We build it and manage products, prices, stock and orders.</p></details>
+    <details><summary>How do I pay, and how long does a job take?</summary><p>Price and deadline are agreed on WhatsApp before work starts. Mobile Money is accepted.</p></details>
+  </div>
+</section>
+<section id="about" class="band">
+  <div class="wrap about">
+    <div><h2 class="t">About Bridge</h2><p>Based in Bambili, Cameroon. We help students, professionals and businesses around the world with writing, data, design and websites.</p></div>
+    <div class="cards">
+      <a class="cc" href="https://wa.me/237670290560" target="_blank" rel="noopener noreferrer"><b>WhatsApp</b><span>+237 670 290 560</span></a>
+      <a class="cc" href="mailto:hello@YOUR-DOMAIN.com"><b>Email</b><span>hello@YOUR-DOMAIN.com</span></a>
+      <div class="cc"><b>Location</b><span>Bambili, Bamenda, Cameroon</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top"><svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#f0b429"/><path d="M3 22h26M3 22q6.500-14 13 0 6.500-14 13 0" fill="none" stroke="#0e4b55" stroke-width="3"/></svg>Bridge</a>
+    <p>Bambili, Bamenda, Cameroon. &copy; <span id="yr"></span> Bridge.</p>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="sticky"><a class="btn" id="send2" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="btn ghost" id="mail2" href="#">Email</a></div>
+
+<script>
+const PHONE="237670290560",EMAIL="hello@YOUR-DOMAIN.com",$=id=>document.getElementById(id),$$=s=>[...document.querySelectorAll(s)];
+$('yr').textContent=new Date().getFullYear();
+const hap=p=>{try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}};
+let tt;function toast(m){const t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2000)}
+
+/* services */
+const tabs=$$('#tabs .tab'),ids=tabs.map(t=>t.dataset.id);
+function show(id,focus){
+  tabs.forEach(t=>{const on=t.dataset.id===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on&&focus)t.focus();});
+  ids.forEach(i=>$('p-'+i).hidden=i!==id);
+}
+tabs.forEach((t,i)=>{
+  t.addEventListener('click',()=>{show(t.dataset.id);hap(10)});
+  t.addEventListener('keydown',e=>{
+    const d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+    if(d)show(ids[(i+d+ids.length)%ids.length],true);
+  });
+});
+$$('.tile').forEach(b=>b.addEventListener('click',()=>{show(b.dataset.go);hap(15);$('services').scrollIntoView({behavior:'smooth'})}));
+if(ids.includes(location.hash.slice(1)))show(location.hash.slice(1));else show('academic');
+
+/* quote builder */
+const chips=$$('.chip');let service='Web design';
+function build(){
+  const more=$('more').value.trim();
+  const text=`Hello Bridge, I need help with: ${service}. I need it ${$('when').value}.`+(more?` ${more}`:'');
+  $('msg').textContent=text;$('n').textContent=$('more').value.length;
+  const u=`https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`;
+  $('send').href=u;$('send2').href=u;
+  const m=`mailto:${EMAIL}?subject=${encodeURIComponent('Enquiry: '+service)}&body=${encodeURIComponent(text)}`;$('mail').href=m;$('mail2').href=m;return text;
+}
+function pick(n){service=n;chips.forEach(c=>c.setAttribute('aria-pressed',c.textContent===n));build()}
+chips.forEach(c=>c.addEventListener('click',()=>{pick(c.textContent);hap(10)}));
+$$('.req').forEach(b=>b.addEventListener('click',()=>{
+  pick(b.closest('.panel').dataset.name);hap(15);toast(service+' selected');$('start').scrollIntoView({behavior:'smooth'});
+}));
+$('when').addEventListener('change',()=>{build();hap(10)});
+$('more').addEventListener('input',build);
+$('send').addEventListener('click',()=>{hap([20,40,20]);toast('Opening WhatsApp')});
+$('send2').addEventListener('click',()=>hap([20,40,20]));
+['mail','mail2'].forEach(i=>$(i).addEventListener('click',()=>{hap([20,40,20]);toast('Opening your email app')}));
+$('copy').addEventListener('click',async()=>{
+  const t=build();
+  try{await navigator.clipboard.writeText(t);hap(15);toast('Message copied')}catch(e){toast('Copy failed. Select the text instead.')}
+});
+build();
+
+/* phone samples */
+const th=$$('#themes .tab');
+function theme(k){th.forEach(b=>b.setAttribute('aria-pressed',b.textContent===k));$$('.scr').forEach(x=>x.hidden=x.dataset.k!==k);$('other').hidden=k!=='Other'}
+th.forEach(b=>b.addEventListener('click',()=>{theme(b.textContent);hap(10)}));theme('Personal');
+$('other').addEventListener('click',()=>{
+  pick('Web design');hap(15);$('more').placeholder='Describe the website you have in mind.';toast('Web design selected');
+  $('start').scrollIntoView({behavior:'smooth'});setTimeout(()=>$('more').focus({preventScroll:true}),600);
+});
+
+/* search preview */
+function serp(){
+  const name=$('bn').value.trim()||'Your business',what=$('bt').value.trim()||'what you do',town=$('bp').value.trim()||'your city';
+  const title=`${what} in ${town} | ${name}`;
+  $('su').textContent=`https://${name.toLowerCase().replace(/[^a-z0-9]+/g,'')}.com`;
+  $('st').textContent=title.length>60?title.slice(0,57)+'...':title;
+  $('sd').textContent=`${name} offers ${what.toLowerCase()} in ${town}. Message us for prices and fast replies.`;
+  const c=$('count');c.textContent=title.length>60?`Title is ${title.length} characters. Google cuts it near 60.`:`Title is ${title.length} characters. Good length.`;
+  c.className='note '+(title.length>60?'warn':'ok');
+}
+['bn','bt','bp'].forEach(i=>$(i).addEventListener('input',serp));serp();
+
+/* progress bar and active nav */
+addEventListener('scroll',()=>{const h=document.documentElement;$('pg').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+const links=$$('nav a:not(.btn)');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.toggleAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+['services','search','start','faq','about'].forEach(i=>io.observe($(i)));
+</script>
 </body>
 </html>
